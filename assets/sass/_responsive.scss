@@ -1,0 +1,355 @@
+/*------------------------------------
+Extra extra  (xxl) large device
+--------------------------------------*/
+@media(min-width: 1400px) and (max-width:1550px){
+  // ========Banner Rwd Start  
+  .banner{
+    .btn-theme, .btn-white{
+        margin-top: 50px;
+    }
+}
+// ========Banner Rwd Start  
+
+}
+
+/*-------------------------------------
+Extra (xl) large device
+---------------------------------------*/
+@media(min-width: 1200px) and (max-width: 1399px){
+  // =====================Banner Rwd Start  
+    .banner{
+        .btn-theme, .btn-white{
+            margin-top: 50px;
+        }
+    }
+// ======================Banner Rwd Ends
+
+}
+  
+/*-------------------------------------
+large (lg) desktop device
+---------------------------------------*/
+@media(min-width: 992px) and (max-width: 1199px){
+// ======================Banner Rwd Start
+ h1{
+    font-size: 70px;
+}
+.banner{
+    padding: 240px 0 320px;
+    .banner .banner-content h1{
+        line-height: 90px;
+        margin-bottom: 50px;
+    }
+    .btn-theme, .btn-white{
+        margin-top: 50px;
+    }
+}
+// ======================Banner Rwd Ends
+// ======================Feature start
+.feature{
+    .feature-items.active h3{
+        font-size: 22px;
+    }
+    .feature-items h3{
+        font-size: 22px;
+    }
+    p{
+        font-size: 14px;
+    }
+}
+// ======================Feature ends
+// ======================About Start
+.section-padding-mobile{
+ padding: 100px 0;
+}
+// ======================About Ends
+// ======================Service Start
+.service{
+    .service-content h4{
+       font-size: 20px;
+    }
+
+// ======TEST PART FROM HERE
+
+}
+// ======================Service ends
+// ======================Blog Start
+.blog-news{
+    .blog-section-heading h2 {
+        margin-bottom: 30px;
+    }
+} 
+// ======================Blog Ends
+
+}
+
+/*-------------------------------------
+Small (md) lanscape phone
+---------------------------------------*/
+@media(min-width: 768px) and (max-width: 991px){
+// ======================Banner Rwd Start
+h1{
+font-size: 60px;
+}
+.banner{
+    padding: 240px 0 330px 0;  
+    .banner .banner-content h1{
+        line-height: 80px;
+        margin-bottom: 40px;
+    }
+}
+// ======================Banner Rwd Ends
+// ======================Feature start
+h3{
+    font-size: 25px;
+}
+.feature{
+    .feature-items.active h3{
+        font-size: 25px;
+    }
+};
+
+// ======================Feature ends
+// ======================About start
+.section-padding-mobile{
+    padding: 100px 0;
+   }
+// ======================About ends
+// ======================Cta Start
+.cta{
+    .cta-content h2{
+     font-size: 30px;
+    }
+}
+
+// ======================Cta Ends
+// ======================Case Study Start
+
+.case-study::before {
+	display: none;
+}
+.case-study::after {
+	display: none;
+}
+// ======================Case Study Ends
+// ======================Team Study Start
+.team{
+    .team-heading h2 {
+        font-size: 30px;
+    }
+    .team-text {
+    margin-top: 0;
+    font-size: 15px;
+    }
+}
+// ======================Team Study Ends
+// ======================Blog Study Start
+.blog-news .blog-section-heading h2 {
+	margin-bottom: 30px;
+}
+// ======================Blog Study Ends
+// ======================Footer Study Start
+.footer-contact{
+   margin-bottom: 30px;
+   .footer-logo{
+    margin-bottom: 13px;
+   }
+}
+
+// ======================Footer Study Ends
+
+}
+
+/*-------------------------------------
+Small (sm) device
+---------------------------------------*/
+@media(min-width: 576px) and (max-width: 767px){
+// ==========================Banner Rwd Start
+h1{
+    font-size: 45px;
+}
+.banner{
+    padding: 230px 0 297px 0;
+    .banner-content h1{
+        line-height: 60px;
+        margin-bottom: 50px;   
+    }
+    .btn-theme{
+        margin-right: 5px;
+    }
+}
+// ==========================Banner Rwd Ends
+// ==========================About Rwd start
+.about{
+    .about-content h2{
+    font-size: 38px;
+    } 
+  } 
+
+  .section-padding-mobile{
+    padding: 100px 0;
+}
+// ==========================About Rwd Ends
+// ==========================Cta Rwd Start
+.cta{
+    .cta-content h2{
+        font-size: 37px;
+    }
+}
+// ==========================Cta Rwd Ends
+
+// ======================Case Study Start
+.case-study-single{
+    .case-study-content h5{
+        font-size: 30px;
+    }
+}
+.case-study::before {
+	display: none;
+}
+.case-study::after {
+	display: none;
+}
+// ======================Case Study Ends
+// ======================Team Start
+.team{
+    .team-heading h2 {
+        margin-bottom: -65px;
+    }
+    .team-person{
+        margin-top: 20px;
+    }
+} 
+// ======================Team Ends
+// ======================Blog Start
+.blog-news{
+    .blog-section-heading h2 {
+       margin-bottom:30px;
+ }
+ .blog-content span{
+    margin-bottom: 30px;
+ }
+ .blog-content h5 {
+	margin-bottom: 14px;
+}
+}
+// ======================Blog Ends
+.footer{
+    .footer-btm .copy-right {
+        font-size: 11px;
+    }
+} 
+}
+//======== 
+.footer .footer-btm {
+	 margin-top: 80px; 
+}
+
+
+/*-------------------------------------
+Extra Small (xs) device
+---------------------------------------*/
+@media(min-width: 320px) and (max-width: 575px){
+  // =======================Banner Rwd Start 
+  h1{
+    font-size: 37px;
+  }
+.banner{
+    padding: 194px 0 283px 0;
+    .banner-content h1{
+        line-height: 45px;
+        margin-bottom: 50px;  
+    }
+    .banner-content .subheading{
+        font-size: 13px;  
+    }
+    .btn-theme{
+        margin: 0 5px 8px 0;
+    }
+    .btn-white{
+        margin-bottom: 8px; 
+    }
+}
+
+// =======================Banner Rwd Ends
+// ======================Feature start
+
+.feature{
+    .feature-items h3{
+        font-size: 22px;
+    }
+    p{
+        font-size: 14px;
+    }
+} 
+// ======================Feature ends
+// ======================About start
+.about{
+    .about-content h2{
+        font-size: 33px;
+    }
+} 
+
+// ======================About ends
+// ======================Service Start
+
+.service{
+    .section-heading h2 {
+        font-size: 25px;
+  }
+  .service-content h4 {
+	font-size: 22px;
+  }
+ } 
+// ======================Service Ends
+
+// ======================Case Study Start
+.case-study{
+    .case-study-content h5{
+        font-size: 30px;
+    }
+    .case-study-heading h2{
+        font-size: 35px;
+       }
+}
+.case-study::before {
+	display: none;
+}
+.case-study::after {
+	display: none;
+}
+
+// ======================Case Study Ends
+// ======================Team Start
+.team{
+    .team-heading h2 {
+        font-size: 30px;
+        margin-bottom: -65px;
+    }
+    .team-person{
+        margin-top: 20px;
+    }
+} 
+// ======================Team Ends
+// ======================Footer Start
+.footer{
+    .xs-footter{
+        margin: 0 auto;
+
+        display: grid;
+        grid-template-columns:auto auto;
+        gap:10px;
+        padding: 10px;
+    }
+    .footer-logo{
+      img{
+        margin-top: -20px;
+      }
+    }
+}
+// ======================Footer Ends
+
+}
+
+
+

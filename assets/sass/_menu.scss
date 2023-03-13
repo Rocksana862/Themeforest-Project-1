@@ -1,0 +1,233 @@
+/*================
+Navigation Menu
+=================*/
+.header-menu{
+    padding: 50px 0px;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    top:0;
+    .main-menu{
+        ul{
+            li{
+                list-style-type: none;
+                display: inline-block;
+                margin-right: 45px;
+                position: relative;
+               
+            a{
+                font-family: $heading-font;
+                font-weight: 700;
+                font-size: 17px;
+                color: #fff;
+                &:hover{
+                    color: $primary-color;
+                }
+            }
+            
+        }    
+    } 
+ }
+ .menu-item-has-children{
+    position: relative;
+    &:hover > .sub-menu{
+        opacity: 3;
+        visibility: visible;
+        animation: animate 300ms ease-in-out forwards;
+        animation-delay: -150ms;
+    }
+    .sub-menu{
+        position: absolute;
+        width: 220px;
+        top: 120%;
+        left: 100%;
+        background: #fff;
+        box-shadow: 10px 20px 30px rgba(0,0,0,0.05);
+        opacity:0;
+        visibility: hidden;
+        transition: all .4s ease;
+        li{
+            margin-right: 0px;
+            a{
+             margin-left: 0px;
+             width: 220px;
+             color: #000;
+             padding: 14px;
+             display: block;
+             border-bottom: 1px solid #eee;
+             font-size: 14px;
+            }
+            &:last-child a {
+                border-bottom: none;
+        }    
+     }
+     .sub-menu{
+        left: 100%;
+        top: 0px;
+        li{
+            border-bottom: 1px solid #eee;
+        }
+     }
+   }
+  }
+  .header-btn{
+    .btn{
+        border-color: rgba(255,255,255,05);
+        color: #fff;
+    }
+  }
+}
+@keyframes animate{
+    0%{
+      opacity:0;
+      transform:rotateX(-90deg);
+    }
+    50%{
+        transform: rotateX(20deg);
+    }
+    100%{
+        opacity:1;
+        transform:rotate(0deg);
+    }
+}
+
+
+// //============Menubar Responsive start
+.header-menu.mobile-menu .site-navbar{
+position: fixed;
+right: 0;
+top: 0;
+width: 280px;
+height: 100vh;
+margin-right: -280px;
+background-color: #000;
+z-index:999;
+display: block;
+padding: 40px 0 40px;
+overflow-x: hidden;
+overflow-y: scroll;
+transition: all .4s ease;
+}
+.header-menu.mobile-menu .site-navbar.menu-on{
+margin-right:0;
+}
+.header-menu.mobile-menu .main-menu {
+ display: block;
+ ul{
+    li{
+        display:block;
+        a{
+         display: block;
+         color: rgba(255, 255, 255, 0.8);
+         padding: 10px 20px;
+         font-size: 14px;
+         font-weight: 600;
+        }
+    }
+ }
+}
+
+// submenu
+
+.header-menu.mobile-menu .main-menu li .sub-menu{
+    position: unset;
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+    background: #000000;
+    border: none;
+    transition: none;
+    box-shadow: none;
+    display: none;
+    border-top: 1px solid rgba(255, 255, 255, .2);
+}
+.header-menu.mobile-menu .main-menu ul li:not(last-child){
+    margin-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);  
+
+}
+.header-menu.mobile-menu .main-menu li .submain li{
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+.header-menu.mobile-menu .main-menu li .menu-trigger{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(0);
+    border-left: 1px solid rgba(255, 255, 255, .2); 
+    z-index:2;
+}
+.header-menu a.nav-close{
+    display: none;
+}
+.header-menu.mobile-menu .site-navbar a.nav-close{
+ position: absolute;
+ top: 20px;
+ right: 10px;
+ font-size: 18px;
+ line-height: 1;
+ padding: 5px;
+ color: #fff;
+ z-index: 9999;
+ display: block;
+}
+.offcanvas-icon{
+  a{
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  text-align: center;
+  line-height: 50px;
+  display: block;
+  color: #000;
+  &:hover{
+    background: $primary-color;
+    color: #fff;
+   }
+  }
+}
+
+//============Menubar Responsive ends
+
+ //============ Stickey Menu Bar
+//  .menu_fixed{
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     background: #000;
+//     z-index: 999;
+//     padding: 28px 0;
+//     transition: all .4s ease;
+//     .header-btn{
+//     background: #fff;
+//     &:hover .btn{
+//         color: #fff;
+//      }
+//     .btn{
+//      color: #000;
+//     }
+//    }
+//  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
